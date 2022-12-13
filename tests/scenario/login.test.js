@@ -13,6 +13,6 @@ describe('login Test', () => {
         element.fillField(loginPage.usernameField, login.INVALID_LOGIN_DATA.username);
         element.fillField(loginPage.passwordField, login.INVALID_LOGIN_DATA.password);
         element.click(loginPage.loginButton);
-        assert.shouldContainText(loginPage.errorMessage, "Ensure the error message is displayed when user entered invalid login data");
+        assert.shouldContainText(loginPage.errorMessage, "Epic sadface: Username and password do not match any user in this service");
     })
 })
